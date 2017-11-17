@@ -1,0 +1,35 @@
+
+.menu {
+  margin: 0;
+}
+
+ul {
+  background-color: #f7bc37;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+ul > li {
+ padding: 5px 0;
+}
+
+ul > li button {
+  background-color: transparent;
+  border: 0;
+  border-right: 1px solid #fff;
+  color: #fff;
+  text-shadow: 2px 0px 0px #ddd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 40px;
+  max-width: 140px;
+  padding: 10px 20px;
+}
+
+ul > li button:hover,
+ul > li button:focus {
+  outline: none;
+  background-color: #eab43a;
+}
