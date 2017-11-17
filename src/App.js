@@ -1,29 +1,18 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
 
-import Nav from './components/Nav';
 
-import styles from './App.css';
+import Header from './components/Header';
 
-export default class App extends Component {
-
+class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      username: '' 
-    };
   }
-
 
   render() {
     return (
       <div className="container">
-        <header className={ styles.header }>
-          <div id="logo">
-            <a href="#">SPA Vainilla</a>
-          </div>
-          <Nav />
-          <div>username: { this.state.username }</div>
-        </header> 
+        <Header username={this.props.user.data} />
         <div className="sections">
           { this.props.children }
         </div>
@@ -31,3 +20,10 @@ export default class App extends Component {
     );
   }
 }
+
+const mapStateToProps = (store) => ({user: store.user})
+
+export default connect(
+    mapStateToProps,
+)(App) 
+

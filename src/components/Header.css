@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+}
+
+header {
+  align-items: center;
+  background-color: #f7bc37;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#logo {
+  flex: 1 0 10%;
+  padding: 15px;
+}
+
+#logo a {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  padding: 5px;
+}
+
+.username {
+  color: #fff;
+  flex: 1 0 8%;
+}
+
+.username h5 {
+  margin: 0 10px;
+  font-family: sans-serif;
+  font-size: 1em;
+}

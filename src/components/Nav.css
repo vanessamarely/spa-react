@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+nav {
+  flex: 1 0 60%;
+}
+
 ul {
   background-color: #f7bc37;
   display: flex;
@@ -20,10 +24,9 @@ ul > li button {
   border: 0;
   border-right: 1px solid #fff;
   color: #fff;
-  text-shadow: 2px 0px 0px #ddd;
-  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 0px 0px #ddd;
+  font-family: sans-serif;
   font-size: 1em;
-  height: 40px;
   max-width: 140px;
   padding: 10px 20px;
 }
@@ -32,4 +35,9 @@ ul > li button:hover,
 ul > li button:focus {
   outline: none;
   background-color: #eab43a;
+}
+
+ul > li button a {
+  color: #fff;
+  text-decoration: none;
 }
